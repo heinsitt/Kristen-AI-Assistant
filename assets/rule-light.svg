@@ -1,39 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="24" viewBox="0 0 1000 24" role="img" aria-label="Section divider">
   <defs>
-    <linearGradient id="rd" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0E7490" stop-opacity="0"/>
-      <stop offset="0.2" stop-color="#0E7490" stop-opacity="0.20"/>
-      <stop offset="0.45" stop-color="#0E7490" stop-opacity="0.40"/>
-      <stop offset="0.62" stop-color="#0E7490" stop-opacity="0.32"/>
-      <stop offset="0.82" stop-color="#0E7490" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#0E7490" stop-opacity="0"/>
+    <linearGradient id="hudline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A6E88" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#0A6E88" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#0A6E88" stop-opacity="0.75"/>
+      <stop offset="82%" stop-color="#0A6E88" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0A6E88" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0E7490" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#0E7490" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#0E7490" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="lc"><rect x="0" y="10" width="1000" height="4"/></clipPath>
   </defs>
-  <rect x="0" y="11.4" width="1000" height="1.2" fill="url(#rd)"/>
-  <g clip-path="url(#lc)">
-    <rect x="-120" y="10" width="120" height="4" fill="url(#glint)">
-      <animate attributeName="x" values="-140;1010" dur="7.5s" repeatCount="indefinite"/>
+  <path d="M0 12 H1000" stroke="url(#hudline)" stroke-width="1.2"/>
+  <g stroke="#0A6E88" stroke-opacity="0.32" stroke-width="1"><path d="M0 11 v6"/><path d="M25 11 v3"/><path d="M50 11 v3"/><path d="M75 11 v3"/><path d="M100 11 v6"/><path d="M125 11 v3"/><path d="M150 11 v3"/><path d="M175 11 v3"/><path d="M200 11 v6"/><path d="M225 11 v3"/><path d="M250 11 v3"/><path d="M275 11 v3"/><path d="M300 11 v6"/><path d="M325 11 v3"/><path d="M350 11 v3"/><path d="M375 11 v3"/><path d="M400 11 v6"/><path d="M425 11 v3"/><path d="M450 11 v3"/><path d="M475 11 v3"/><path d="M500 11 v6"/><path d="M525 11 v3"/><path d="M550 11 v3"/><path d="M575 11 v3"/><path d="M600 11 v6"/><path d="M625 11 v3"/><path d="M650 11 v3"/><path d="M675 11 v3"/><path d="M700 11 v6"/><path d="M725 11 v3"/><path d="M750 11 v3"/><path d="M775 11 v3"/><path d="M800 11 v6"/><path d="M825 11 v3"/><path d="M850 11 v3"/><path d="M875 11 v3"/><path d="M900 11 v6"/><path d="M925 11 v3"/><path d="M950 11 v3"/><path d="M975 11 v3"/><path d="M1000 11 v6"/></g>
+  <g transform="translate(500 12)">
+    <circle r="9" fill="none" stroke="#0A6E88" stroke-opacity="0.55" stroke-width="1.2" stroke-dasharray="3 3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="-3.2" y="-3.2" width="6.4" height="6.4" fill="#B45309" opacity="0.95">
+      <animate attributeName="opacity" values="0.95;0.35;0.95" dur="3.2s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <g transform="translate(500 12)">
-    <path d="M0,-6 L1.4,-1.4 L6,0 L1.4,1.4 L0,6 L-1.4,1.4 L-6,0 L-1.4,-1.4 Z" fill="#0E7490" opacity="0.9">
-      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="5s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <g transform="translate(300 12)">
-    <circle r="1.7" fill="#0E7490" opacity="0.6">
-      <animate attributeName="opacity" values="0.6;0.12;0.6" dur="3.6s" begin="-1.2s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-  <g transform="translate(700 12)">
-    <circle r="1.7" fill="#0E7490" opacity="0.55">
-      <animate attributeName="opacity" values="0.55;0.1;0.55" dur="4.4s" begin="-2.1s" repeatCount="indefinite"/>
-    </circle>
+  <g stroke="#0A6E88" stroke-opacity="0.6" stroke-width="1.4" fill="none">
+    <path d="M4 6 V18"/><path d="M996 6 V18"/>
   </g>
 </svg>
